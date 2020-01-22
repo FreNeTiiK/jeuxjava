@@ -1,0 +1,104 @@
+package projet1;
+import java.util.*;
+public class test1 {
+
+	public static void main(String[] args) {
+	
+		 Random r = new Random();
+		  String carte ="";
+		  String carte1 ="";
+		  String carte2 ="";
+		  int test1=0;
+		  int test2=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Joueur 1, Entrez votre nom \n");
+		String J1 = sc.nextLine();
+		System.out.println("Joueur 2, Entrez votre nom \n");
+		String J2 = sc.nextLine();
+		System.out.println("Le joueur 1 s'appelle " + J1 + " et le joueur 2 s'appelle " + J2);
+		System.out.println("Le joueur 1 tire la carte ");
+		System.out.println("Le joueur 2 tire la carte ");
+		
+		for(int i=1; i<=3;i++) {
+		    int valeur1 = r.nextInt(8);
+		    int couleur1 = r.nextInt(4);
+		if ((couleur1 == 1) && (valeur1==1))
+			carte = "7 de trefle";
+		if ((couleur1 == 1) && (valeur1==2))
+			carte = "8 de trefle";
+		if ((couleur1 == 1) && (valeur1==3))
+			carte = "9 de trefle";
+		if ((couleur1 == 1) && (valeur1==4))
+			carte = "10 de trefle";
+		if ((couleur1 == 1) && (valeur1==5))
+			carte = "Valet de trefle";
+		if ((couleur1 == 1) && (valeur1==6))
+			carte = "Dame de trefle";
+		if ((couleur1 == 1) && (valeur1==7))
+			carte = "Roi de trefle";
+		if ((couleur1 == 1) && (valeur1==8))
+			carte = "AS de trefle";
+		if ((couleur1 == 2) && (valeur1==1))
+			carte = "7 de pique";
+		if ((couleur1 == 2) && (valeur1==2))
+			carte = "8 de pique";
+		if ((couleur1 == 2) && (valeur1==3))
+			carte = "9 de pique";
+		if ((couleur1 == 2) && (valeur1==4))
+			carte = "10 de pique";
+		if ((couleur1 == 2) && (valeur1==5))
+			carte = "Valet de pique";
+		if ((couleur1 == 2) && (valeur1==6))
+			carte = "Dame de pique";
+		if ((couleur1 == 2) && (valeur1==7))
+			carte = "Roi de pique";
+		if ((couleur1 == 2) && (valeur1==8))
+			carte = "AS de pique";
+		if ((couleur1 == 3) && (valeur1==1))
+			carte = "7 de coeur";
+		if ((couleur1 == 3) && (valeur1==2))
+			carte = "8 de coeur";
+		if ((couleur1 == 3) && (valeur1==3))
+			carte = "9 de coeur";
+		if ((couleur1 == 3) && (valeur1==4))
+			carte = "10 de coeur";
+		if ((couleur1 == 3) && (valeur1==5))
+			carte = "Valet de coeur";
+		if ((couleur1 == 3) && (valeur1==6))
+			carte = "Dame de coeur";
+		if ((couleur1 == 3) && (valeur1==7))
+			carte = "Roi de coeur";
+		if ((couleur1 == 3) && (valeur1==8))
+			carte = "AS de coeur";
+		if ((couleur1 == 4) && (valeur1==1))
+			carte = "7 de carreau";
+		if ((couleur1 == 4) && (valeur1==2))
+			carte = "8 de carreau";
+		if ((couleur1 == 4) && (valeur1==3))
+			carte = "9 de carreau";
+		if ((couleur1 == 4) && (valeur1==4))
+			carte = "10 de carreau";
+		if ((couleur1 == 4) && (valeur1==5))
+			carte = "Valet de carreau";
+		if ((couleur1 == 4) && (valeur1==6))
+			carte = "Dame de carreau";
+		if ((couleur1 == 4) && (valeur1==7))
+			carte = "Roi de carreau";
+		if ((couleur1 == 4) && (valeur1==8))
+			carte = "AS de carreau";
+		if(i==2)
+			carte1=carte;
+			test1=valeur1;
+		if(i==3)
+			carte2=carte;
+			test2=valeur1;}
+		
+		System.out.println("Le joueur 1 à " + carte1 + " et le joueur 2 a " + carte2);
+		if (test1>test2)
+			System.out.println("Le joueur 1 à gagné");
+		if (test2>test1)
+			System.out.println("Le joueur 2 à gagné");
+		if (test1==test2)
+			System.out.println("Il y a égalité");
+		}	
+	}
