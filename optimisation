@@ -1,0 +1,30 @@
+package projet1;
+import java.util.*;
+public class test {
+	public static void main(String[] args) {
+		String [] couleur = {"Trefle","Pique","Carreau","Coeur"};
+		String [] niveau = {"7","8","9","10","Valet","Dame","Roi","As"};
+		Random r = new Random();
+		int J1 = r.nextInt(8);
+		int J11= r.nextInt(4);
+		int J2 = r.nextInt(8);
+		int J22= r.nextInt(4);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Joueur 1, Entrez votre nom \n");
+		String Joueur1 = sc.nextLine();
+		System.out.println("Joueur 2, Entrez votre nom \n");
+		String Joueur2 = sc.nextLine();
+		System.out.println("Le joueur 1 s'appelle " + Joueur1 + " et le joueur 2 s'appelle " + Joueur2);
+		System.out.println("Le joueur 1 tire la carte ");
+		System.out.println("Le joueur 2 tire la carte ");
+		System.out.println("Le joueur 1 à un " + niveau[J1] +" de "+ couleur[J11] + " et le joueur 2 a un " + niveau[J2] +" de "+ couleur[J22]);
+		if (J1>J2)
+			System.out.println("Le joueur 1 à gagné");
+		else if (J2>J1)
+			System.out.println("Le joueur 2 à gagné");
+		else
+			System.out.println("Il y a égalité");
+		}
+	}
+
+
